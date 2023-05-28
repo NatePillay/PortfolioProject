@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Methods</title>
+</head>
+<body>
+    <h1>Payment Methods</h1>
+    
+    <form method="POST" action="/payment/add">
+        <label for="card_number">Card Number:</label>
+        <input type="text" id="card_number" name="card_number">
+        <br>
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="text" id="expiry_date" name="expiry_date">
+        <br>
+        <button type="submit">Add Payment Method</button>
+    </form>
+    
+    <!-- Display existing payment methods here -->
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome, {{ username }}</h1>
+<p>Email: {{ email }}</p>
+<p>Unique ID: {{ unique_id }}</p>
+<form method="POST" action="{{ url_for('search') }}">
+    <input type="text" name="unique_id" placeholder="Enter unique ID">
+    <button type="submit">Pay Someone</button>
+    <a href="/pay">Pay Someone</a>
+</form>
